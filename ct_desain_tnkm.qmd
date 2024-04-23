@@ -1,0 +1,746 @@
+---
+title: "Kamera Intai"
+subtitle: "Teknik dan Desain Survei"
+author: "Ryan Avriandy"
+institute: "Disampaikan Pada;\\ \\ 26 Maret 2024"
+format:
+  revealjs: 
+    slide-number: true
+    chalkboard: 
+      buttons: false
+    logo: images/FF_Logo.png
+    css: styles.css
+ 
+editor: visual
+---
+
+## Pendahuluan
+
+Presentasi ini akan membahas mengenai;
+
+-   Kamera Intai dan Fitur Umum
+
+-   Tujuan dan Desain Survei
+
+-   Protokol Pemasangan dan Pengambilan kamera Intai
+
+-   Pengelolaan Data Kamera Intai
+
+## Kamera Intai
+
+::: columns
+::: {.column width="40%"}
+![Fitur umum kamera intai](images/ct_gen.png){fig-alt="Fitur umum kamera intai"}
+:::
+
+::: {.column width="60%"}
+::: incremental
+1.  IR LED (*infrared light emitting diode)*
+
+2.  Sensor Cahaya
+
+3.  Lensa
+
+4.  Lampu Indikator
+
+5.  Sensor PIR (*Passive Infrared*)
+:::
+:::
+:::
+
+## Perkembangan Teknologi Terkini
+
+::: columns
+::: {.column width="25%"}
+![Panatrap](images/panatrap.jpg){fig-alt="Panatrap"}
+:::
+
+::: {.column width="25%"}
+![*Underwater camera trap*](images/uwcamtrap.jpeg){fig-alt="uwct"}
+:::
+
+::: {.column width="25%"}
+![*Modified camera trap*](images/mdcamtrap.png){fig-alt="mdct"}
+:::
+
+::: {.column width="25%"}
+![*Cellular camera trap*](images/celcamtrap.png){fig-alt="celct"}
+:::
+:::
+
+## Memilih Kamera Intai {.scrollable .smaller}
+
+![](images/ct_manu.jpg){.r-stretch}
+
+Nilai rata-rata produsen kamera intai ([Glover-Kapfer et al. 2019](https://doi.org/10.1002/rse2.106)).
+
+## Desain Survei
+
+Desain survei disesuaikan dari banyak faktor, termasuk target spesies dan tujuan survei.
+
+## Tujuan Survei
+
+::: columns
+::: {.column width="50%"}
+![](images/objmeme.jpg){fig-alt="objmeme"}
+:::
+
+::: {.column width="50%"}
+::: incremental
+-   Inventarisasi Kehati
+
+-   Sebaran Spesies
+
+    -   Model [Okupansi](https://doi.org/10.1890/0012-9658(2002)083%5B2248:ESORWD%5D2.0.CO;2)
+
+    -   Model [*Maxent*](https://doi.org/10.1016/j.ecolmodel.2005.03.026)
+
+-   Estimasi Kelimpahan Spesies
+
+    -   [Kelimpahan Relatif](https://zslpublications.onlinelibrary.wiley.com/doi/10.1017/S1367943003003172)
+
+    -   Estimasi Kepadatan Satwa [(SECR)](https://onlinelibrary.wiley.com/doi/10.1111/j.1541-0420.2007.00927.x)
+:::
+:::
+:::
+
+## Tujuan Survei
+
+::: columns
+::: {.column width="50%"}
+![](images/objmeme.jpg){fig-alt="objmeme"}
+:::
+
+::: {.column width="50%"}
+::: incremental
+-   Monitoring Tren
+
+-   Perilaku
+
+    -   Pola aktivitas satwa
+
+    -   Preferensi habitat
+:::
+:::
+:::
+
+## Inventarisasi Kehati
+
+![](images/spinv.png){fig-alt="spinv"}
+
+## Sebaran Spesies
+
+![](images/sebaran.png)
+
+## Sebaran Spesies
+
+![](images/sebaranokup.png)
+
+## Estimasi Kelimpahan Spesies {.scrollable .smaller}
+
+### Indeks Kelimpahan Relatif
+
+::: columns
+::: {.column width="65%"}
+![[Bhatt et al. 2022](https://checklist.pensoft.net/article/83560/)](images/RAI1.png)
+:::
+
+::: {.column width="35%"}
+-   Merupakan perhitungan dari jumlah foto independen\* spesies dibagi 100 hari rekam ([O\`Brien et al 2006](https://onlinelibrary.wiley.com/doi/10.1111/j.1541-0420.2007.00927.x))
+
+-   Dapat dibandingkan dengan lanskap lain
+:::
+:::
+
+## Estimasi Kelimpahan Spesies {.scrollable .smaller}
+
+### Estimasi Kepadatan Spesies
+
+::: columns
+::: {.column width="65%"}
+![[Sollmann et al. 2022](https://checklist.pensoft.net/article/83560/)](images/secr.png)
+:::
+
+::: {.column width="35%"}
+-   Umumnya merupakan perhitungan dari jumlah individu per 100 km^2^ dengan metode SECR ([Borchers and Efford 2008](https://zslpublications.onlinelibrary.wiley.com/doi/10.1017/S1367943003003172))
+
+-   Memerlukan identifikasi pada tingkat individu
+
+-   Memerlukan desain survei dengan pemasangan kamera secara berpasangan
+:::
+:::
+
+## Perilaku
+
+{{< video https://youtu.be/8XLGLppXpCM width="100%" height="100%" >}}
+
+## Perilaku
+
+{{< video https://youtu.be/TZIXIDepiio width="100%" height="100%" >}}
+
+## Perilaku
+
+![[Allen et al. 2020](https://doi.org/10.1017/S0030605319000577)](images/overlap.png)
+
+## Rekomendasi Desain Survei {.smaller}
+
+| Tujuan Survei        | Strategi Pemasangan     | Jarak Antar Kamera                               | Jumlah Stasiun Kamera      | Durasi Survei                                |
+|--------------|--------------|-----------------|--------------|---------------|
+| Inventarisasi Kehati | Acak / Purposif         | Tidak ada                                        | Sebanyak mungkin           | Tidak ada maksimum                           |
+| Sebaran Spesies      | Sistematik              | Lebih **besar** dari *home range* spesies target | [\>]{.underline}40 stasiun | Tergantung pada target spesies (3 - 6 bulan) |
+| Kelimpahan Spesies   | Sistematik              | Lebih **kecil** dari *home range* spesies target | 30 - 50 stasiun            | Tergantung pada target spesies (3 - 6 bulan) |
+| Perilaku             | Tergantung tujuan studi |                                                  |                            |                                              |
+
+## Protokol Survei
+
+### Pra Survei
+
+Sebelum survei dilaksanakan, seluruh kamera pengintai harus diuji coba semua fungsinya. Ada kalanya kamera yang masih berfungsi dengan baik pada survei sebelumnya, mengalami kerusakan selama penyimpanan. Pastikan baterai, sensor pemicu, cahaya infrared dan perangkat lunaknya berfungsi optimal.
+
+## Pra Survei - Pengaturan kamera
+
+![](images/tabset.png){.r-stretch fig-alt="tabset"}
+
+::: notes
+Sebelum melakukan survei, seluruh menu pengaturan harus sudah ditetapkan sehingga dapat diatur dan diseragamkan kepada seluruh perangkat sebelum survei dimulai dan dibawa ke lapang.
+:::
+
+## Rekomendasi Pemilihan lokasi {.scrollable .smaller}
+
+Setelah tim sampai di grid atau lokasi target, tim mulai melakukan pencarian lokasi pemasangan terbaik. Proses ini harus dilakukan dengan seksama tanpa terburu-buru. Lokasi terbaik dipilih berdasarkan berbagai pertimbangan, seperti:
+
+1.  [Optimal]{.underline}. Lokasi yang terdapat tanda satwa yang baru ditinggalkan seperti tapak, kaisan pada lantai hutan, cakaran pada batang pohon, feses maupun urin.
+
+2.  Lokasi dengan fitur alami seperti kubangan lumpur atau salt lick
+
+3.  Lokasi dengan persimpangan atau pertemuan beberapa jalur yang aktif digunakan oleh satwa dapat meningkatkan kemungkinan merekam spesies yang berbeda
+
+4.  Lokasi pada jalur dengan topografi berupa punggungan panjang yang aktif digunakan oleh satwa maupun oleh manusia
+
+5.  [Kurang Optimal]{.underline}. Lokasi dekat dengan sumber air yang memiliki jalur penghubung antara badan air dan daratan.
+
+::: notes
+Ketika lokasi tersebut sudah ditemukan, tahap selanjutnya adalah memastikan bahwa lokasi tersebut kondisi jalurnya relatif datar dan hindari daerah rawa yang memiliki kemungkinan banjir apabila terjadi hujan deras.
+:::
+
+## Pemilihan lokasi {.scrollable .smaller}
+
+![](images/jejak1.png){.r-stretch} Lokasi dengan tanda-tanda satwa yang baru ditinggalkan
+
+## Pemilihan lokasi {.scrollable .smaller}
+
+![](images/jejak3.png){.r-stretch} Lokasi dengan jalur alami atau bekas jalur manusia yang panjang
+
+## Pemilihan lokasi {.scrollable .smaller}
+
+![](images/grsurvei.png){.r-stretch}
+
+Pada survei pemasangan kamera yang bersifat sistematis menggunakan grid, salah satu hal yang perlu diperhatikan adalah bagaimana jarak antar kamera diupayakan untuk tetap independen!
+
+## Langkah Pemasangan kamera {.scrollable .smaller}
+
+::: columns
+::: {.column width="50%"}
+![](images/sudutdantali.png)
+:::
+
+::: {.column width="50%"}
+::: incremental
+-   Mengatur tinggi kamera (Disesuaikan dengan satwa target)
+
+-   Mengatur sudut dan jarak kamera (Disesuaikan dengan spesifikasi kamera)
+
+-   Membersihkan vegetasi di sekitar kamera dan jalur satwa
+
+-   Memastikan kembali kamera sudah dinyalakan
+:::
+:::
+:::
+
+## Ketinggian kamera {.scrollable .smaller}
+
+![](images/tinggikamera.png){.r-stretch}
+
+Untuk memaksimalkan deteksi satwa, kamera pengintai harus dipasang pada batang pohon dengan ketinggian yang disesuaikan dengan spesies target (30 - 50 cm). Pengaturan ketinggian ini merupakan ketinggian kamera secara paralel terhadap jalur target (Bukan pada batang pohon!).
+
+## Ketinggian kamera {.scrollable .smaller}
+
+![](images/tinggirendah.jpg){.r-stretch}
+
+## Jarak dan sudut kamera {.scrollable .smaller}
+
+![](images/jarakct.jpg){.r-stretch}
+
+Pemasangan kamera diatur supaya jarak dari jalur target kurang lebih sekitar 3 - 4 meter.
+
+## Efek jarak kamera {.scrollable .smaller}
+
+![](images/distset.png){.r-stretch}
+
+## Sudut kamera {.scrollable .smaller}
+
+![](images/diagonal.jpg){.r-stretch}
+
+## Pemasangan kamera berpasangan {.scrollable .smaller}
+
+![](images/kamerapasang.png){.r-stretch}
+
+kamera pengintai tidak boleh dipasang saling berhadapan karena flash dari Infrared akan aktif bersamaan dan membuat semua gambar menjadi putih. Solusinya adalah dipasang pada kedua sisi jalur dengan diberi jarak.
+
+## Menguji Kamera {.scrollable .smaller}
+
+![](images/merangkak.png){.r-stretch}
+
+## Mengencangkan kamera {.scrollable .smaller}
+
+![](images/fixingct.png)
+
+## Swafoto di depan kamera {.scrollable .smaller}
+
+![](images/ctselfie.png){.r-stretch}
+
+Proses ini harus dilakukan pada saat pemasangan, maupun pada saat pengambilan kamera setelah survei selesai. Langkah ini dilakukan untuk verifikasi tanggal dan lokasi dengan data yang terekam pada kamera pengintai.
+
+## Pengelolaan Data {.scrollable .smaller}
+
+Pengelolaan data kamera pengintai dapat dianggap "benar" jika mampu menyediakan struktur data yang konsisten namun fleksibel untuk dapat memenuhi berbagai macam desain survei dan luaran yang dibutuhkan
+
+[Scotson et al. 2017](https://zslpublications.onlinelibrary.wiley.com/doi/10.1002/rse2.54) meninjau berbagai macam perangkat lunak yang ada untuk mengelola data kamera intai.
+
+Dalam panduan ini, kami mengadopsi protokol pengelolaan data kamera pengintai menggunakan '*camtrapR*' karena gratis, memiliki kapasitas penyimpanan tidak terbatas\* serta memiliki fleksibilitas untuk analisa yang lebih kompleks
+
+## Alur Kerja Pengelolaan Data {.scrollable .smaller}
+
+Alur kerja pengelolaan data dengan '*camtrapR*' dibagi menjadi lima bagian
+
+![](images/workflow.png){.r-stretch}
+
+## Organisir Data Kamera Intai {.scrollable .smaller}
+
+![](images/org.png){.r-stretch}
+
+## Organisir Data Pendukung - Tabular {.scrollable .smaller}
+
+Data tabular berisi temuan satwa dan informasi usaha survei. Contoh dan cara mengisi data tabular dapat diunduh pada tautan berikut ini; [lembar_data](https://ffionline-my.sharepoint.com/:x:/g/personal/ravriandy_fauna-flora_org/EerxFXSkBqBAjU_T5H40OAkBwqO5MiPWsQfM8_04qmdi9Q?e=y4aNK0).
+
+![](images/datasheet.png){.r-stretch}
+
+## Organisir Data Pendukung - Spasial {.scrollable .smaller}
+
+Data spasial pendukung kegiatan survei dengan ekstensi ".gpx".
+
+![](images/figsp.png){.r-stretch}
+
+## Analisis Data {.scrollable .smaller}
+
+### Instalasi perangkat lunak yang dibutuhkan
+
+Komponen penting yang diperlukan untuk menggunakan camtrapR adalah perangkat lunak R studio dan Exiftool. Penjelasan dan langkah instalasi R studio dapat dilihat pada tautan berikut ini '[Panduan instalasi Rstudio.](https://ffionline-my.sharepoint.com/:b:/g/personal/ravriandy_fauna-flora_org/ETx2GFuyFMFNgFmxvMVXYvkBE7K12f_BpVfWlAj-fD-x2g?e=UU46yW)'
+
+::: {.callout-note icon="false"}
+## Instalasi Exiftool
+
+Exiftool digunakan untuk membaca dan menulis metadata dari gambar dan video. Untuk menggunakannya, unduh melalui situs ini; '[Exiftool](https://exiftool.org/install.html)' dengan cara sebagai berikut;.
+
+-   Pastikan mengunduh file *stand-alone executable*.
+
+-   Ekstrak berkas unduhan dari format (.zip).
+
+-   Ubah nama file "exiftool(-k).exe" yang terdapat di dalamnya menjadi "exiftool.exe"
+
+-   Simpan di lokasi kerja anda, misalnya pada direktori "D:/latihan_tnkm"
+
+Pastikan untuk mengikuti langkah-langkah tersebut agar dapat menggunakan exiftool dengan benar dan efektif.
+:::
+
+## Memuat pengaturan awal
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(
+	echo = T,
+	error = FALSE,
+	message = FALSE,
+	warning = FALSE
+)
+```
+
+```{r library, echo=TRUE}
+# Membuat daftar paket yang dibutuhkan
+package.list=c("exiftoolr", "camtrapR", "tidyverse", "lubridate", "sf", "mapview")
+
+# Mengunduh seluruh paket yang belum ada dan memuatnya kedalam sistem
+for (package in package.list) {
+  if (!require(package, character.only=T, quietly=T)) {
+    install.packages(package)
+    library(package, character.only=T)
+  }
+}
+```
+
+## Mengatur tempat penyimpanan data {.scrollable .smaller}
+
+Mengunduh semua data yang dibutuhkan pada tautan ini; [latihan_tnkm.](https://ffionline-my.sharepoint.com/:f:/g/personal/ravriandy_fauna-flora_org/Egm4oMVQ7hRFoKorwq0pEgcBhMYQYGgxkbAX5Ie4Bg_T6g?e=3RPbAQ) Setelah itu ekstrak data yang dibutuhkan dan simpan ke dalam satu folder simulasi data.
+
+![](images/onefold.png) {.r-stretch}
+
+## Mengatur tempat penyimpanan data
+
+Jalankan skrip dibawah ini untuk mengatur lokasi folder hasil kamera intai yang mau dianalisis dan lokasi penyimpanan exiftool.
+
+```{r setup-dir, echo=TRUE}
+# Mengatur lokasi folder untuk analisis
+setwd("D:/latihan_tnkm") #bisa diganti untuk directory yang berbeda
+
+# Mengatur lokasi folder kamera intai
+wd_raw <- "D:/latihan_tnkm/data_simulasi"
+
+# Mengatur lokasi exiftool
+exiftoolPath("D:/latihan_tnkm")
+Sys.which("exiftool")
+
+# Memuat data pemasangan kamera intai
+effort <- read_csv("datasheet/station.csv")
+```
+
+## Membaca data kamera intai
+
+```{r read-images, echo=TRUE}
+
+# membaca data dalam format "jpg", "mp4" dan "mov", 
+# fungsi dibawah ini berfungsi pada model bushnell and reconyx
+rec_table1 <- recordTable(inDir  = wd_raw,
+                          IDfrom = "directory",
+                          timeZone = "Asia/Jakarta",
+                          video  = list(file_formats = c("jpg", "mp4", "mov"),
+                                        dateTimeTag  = "QuickTime:CreateDate")
+)
+
+# membaca data dalam format "avi", 
+# fungsi dibawah ini berfungsi pada model bushnell and cuddeback
+rec_table2 <- recordTable(inDir  = wd_raw,
+                          IDfrom = "directory",
+                          timeZone = "Asia/Jakarta",
+                          video  = list(file_formats = "avi",
+                                        dateTimeTag  = "FileModifyDate")
+)
+
+# gabungkan kedua data tersebut
+rec_table <- rbind(rec_table1, rec_table2)
+
+# membuat data perjumpaan satwa sebagai data tabular
+detection <- rec_table %>% 
+  select(Station, Species, DateTimeOriginal, Date, Time, FileName) %>%
+  inner_join(effort, by="Station") %>%
+  select(1:10) %>%
+  select(Region, Site, Session, Station, Species, DateTimeOriginal, FileName) %>%
+  rename(Scientific.Name = Species) %>%
+  mutate(Notes = NA) %>%
+  mutate(Ind = NA)
+
+# export data tersebut kedalam folder kerja
+write.csv(detection, "datasheet/detection.csv")
+```
+
+## Membuat data foto independen
+
+```{r calc_IE, echo=TRUE}
+#Mengihtung independent event####
+detection_30m <- detection %>%
+    filter(!Scientific.Name=='StartEnd') %>% #remove people who set cameras 
+  camtrapR:::assessTemporalIndependence(deltaTimeComparedTo = "lastIndepentRecord",
+                                        columnOfInterest = "Scientific.Name",
+                                        stationCol = "Station",
+                                        minDeltaTime = 30, # 30 menit, ganti angkanya jika diperlukan
+                                        camerasIndependent = FALSE) %>%
+  drop_na(Scientific.Name) %>%
+  select(Station, Scientific.Name, DateTimeOriginal, FileName, n_images) %>%
+  mutate(IE = 1)
+```
+
+## Membuat tabel ringkasan temuan satwa {.smaller .scrollable transition="slide"}
+
+::: panel-tabset
+### *Code*
+
+```{r gen_sumtab, echo=TRUE, results='hide', fig.show='hide'}
+
+# Membuat waktu operasi kamera 
+camop <- cameraOperation(CTtable = effort,
+                         stationCol = "Station",
+                         setupCol = "Setup_date",
+                         retrievalCol = "End_date",
+                         writecsv = FALSE,
+                         hasProblems = FALSE,
+                         dateFormat = "%d-%b-%y"
+)
+
+# Menghitung hari rekam efektif (mengeluarkan kamera yang rusak) 
+camdays_effective <- rowSums(camop, na.rm = T) %>%
+  as.data.frame() %>%
+  colSums(.)
+
+# Membuat ringkasan temuan satwa
+sum_table <- detection_30m %>%
+    group_by(Scientific.Name) %>%
+    summarise(
+        n_images = sum(n_images),
+        IE = sum(IE),
+        n_locs = n_distinct(Station),
+        camdays_effective = first(camdays_effective)) %>%
+    ungroup() %>%
+    mutate(
+        n_tot = length(unique(effort$Station)),
+        RAI = IE / (camdays_effective / 100),
+        `raw_occ` = n_locs / n_tot) %>%
+    select(-camdays_effective, -n_tot) %>%
+    mutate(across(5:last_col(), ~round(., 2)))
+
+# Membuat plot indeks kelimpahan relatif
+ggplot(sum_table, aes(x = reorder(Scientific.Name, -RAI), y = RAI)) +
+    geom_col(fill = "steelblue", width = 0.5) +
+    theme_classic() +
+    labs(title = "", x = "Spesies", y = "Indeks Kelimpahan Relatif") +
+    theme(axis.text.x = element_text(face = "italic"),
+          axis.text.y = element_text(face = "plain"),
+          axis.title = element_text(size = 12, face = "bold"),
+          axis.line = element_line(size = 0.5, color = "black"),
+          plot.title = element_text(size = 14, face = "bold", margin = margin(b = 10)),
+          panel.grid.major = element_blank(),
+          panel.grid.minor = element_blank(),
+          panel.border = element_blank(),
+          panel.background = element_blank()) +
+    geom_text(aes(label = round(RAI, 2)), nudge_y = 0.05, size = 4, color = "gray40")
+```
+
+### tabel
+
+```{r echo=FALSE}
+#| label: tbl-spl
+#| tbl-cap: "Ringkasan temuan jenis"
+#| tbl-cap-location: top
+
+library(knitr)
+kable(sum_table)
+```
+
+### plot
+
+```{r echo=FALSE}
+ggplot(sum_table, aes(x = reorder(Scientific.Name, -RAI), y = RAI)) +
+    geom_col(fill = "steelblue", width = 0.5) +
+    theme_classic() +
+    labs(title = "", x = "Spesies", y = "Indeks Kelimpahan Relatif") +
+    theme(axis.text.x = element_text(face = "italic"),
+          axis.text.y = element_text(face = "plain"),
+          axis.title = element_text(size = 12, face = "bold"),
+          axis.line = element_line(size = 0.5, color = "black"),
+          plot.title = element_text(size = 14, face = "bold", margin = margin(b = 10)),
+          panel.grid.major = element_blank(),
+          panel.grid.minor = element_blank(),
+          panel.border = element_blank(),
+          panel.background = element_blank()) +
+    geom_text(aes(label = round(RAI, 2)), nudge_y = 0.05, size = 4, color = "gray40")
+
+```
+:::
+
+## Membuat data untuk input maxent {.smaller .scrollable transition="slide"}
+
+::: panel-tabset
+### *Code*
+
+```{r gen_distsp, echo=TRUE, results='hide', fig.show='hide'}
+
+## Membuat tabel sebaran spesies
+Sp_occs <- detectionMaps(CTtable = effort,
+                         recordTable = detection_30m,
+                         Xcol = "Longitude",
+                         Ycol = "Latitude",
+                         stationCol = "Station",
+                         speciesCol = "Scientific.Name",
+                         printLabels = TRUE,
+                         richnessPlot = TRUE, # by setting this argument TRUE
+                         speciesPlots = FALSE,
+                         addLegend = TRUE
+)
+
+# Membuat input maxent untuk spesies spesifik
+in_maxent  <- Sp_occs %>%
+  select(species = 'Neofelis.diardi', #ganti nama ini untuk spesies lain
+         longitude = 'Longitude', latitude = 'Latitude') %>%
+  mutate(species = ifelse(species > 0, 'Neofelis.diardi', #ganti nama ini untuk spesies lain
+                          NA)) %>%
+  na.omit()
+write.csv(in_maxent, "datasheet/in_maxent.csv")
+
+# Membuat input maxent untuk semua spesies
+in_maxent_all <- pivot_longer(
+  data = Sp_occs,
+  cols =  4:(ncol(Sp_occs) - 1),
+  names_to = "species",
+  values_to = "count",
+  values_drop_na = TRUE) %>%
+  select(species, Longitude, Latitude, count) %>%
+  filter(count != 0)
+write.csv(in_maxent, "datasheet/in_maxent_all.csv")
+```
+
+### tabel 1
+
+```{r echo=FALSE}
+#| label: tbl-sp_ds
+#| tbl-cap: "Tabel sebaran spesies"
+#| tbl-cap-location: top
+
+library(knitr)
+kable(Sp_occs)
+```
+
+### tabel 2
+
+```{r echo=FALSE}
+#| label: tbl-sp_mx
+#| tbl-cap: "Data untuk maxent"
+#| tbl-cap-location: top
+
+library(knitr)
+kable(in_maxent)
+```
+:::
+
+## Membuat data sebaran spesies (Bonus) {.smaller .scrollable transition="slide"}
+
+::: panel-tabset
+### *Code*
+
+```{r echo=TRUE, results='hide', fig.show='hide'}
+
+# Membuat nama shapefile
+shapefileName <- "SpeciesOccurences"
+
+# Mengatur referensi geografis: WGS 84  = EPSG:4326
+# lihat: https://spatialreference.org
+shapefileProjection <- 4326
+
+# Mengatur letak output
+sf_out <- "D:/latihan_tnkm"
+
+# Membuat file shapefile
+Sp_occs<- detectionMaps(CTtable = effort,
+                        recordTable = detection_30m,
+                        Xcol = "Longitude",
+                        Ycol = "Latitude",
+                        stationCol = "Station",
+                        speciesCol = "Scientific.Name",
+                        richnessPlot = FALSE, # no richness plot
+                        speciesPlots = FALSE, # no species plots
+                        writeShapefile = TRUE, # but shapefile creation
+                        shapefileName = shapefileName,
+                        shapefileDirectory = sf_out, # change this in your scripts!
+                        shapefileProjection = shapefileProjection
+)
+
+detections_sf <- st_read(dsn = sf_out,
+                         layer = shapefileName)
+
+mapview(detections_sf, zcol = "n_specs", layer.name = "Species Number")
+```
+
+### Peta interaktif
+
+```{r echo=FALSE}
+#| label: tbl-sp_mp
+#| tbl-cap: "Peta interaktif sebaran satwa"
+#| tbl-cap-location: top
+
+mapview(detections_sf, zcol = "n_specs", layer.name = "Species Number")
+```
+:::
+
+## Membuat grafik aktivitas satwa {.smaller .scrollable transition="slide"}
+
+::: panel-tabset
+### *Code*
+
+::: {.callout-note icon="false"}
+## Update dataset
+
+Kita akan mengganti dataset "detecion_30m" dengan dataset yang baru, dikarenakan data sebelumnya tidak cukup banyak untuk membuat plot densitas aktivitas dengan menggunakan kode dibawah ini;
+
+url1 \<- "https://github.com/ryanavri/ct_desain_tnkm/blob/main/det_lot.csv"
+
+detection_30m \<- read.csv(url1)
+:::
+
+```{r act_table, eval=FALSE}
+# Membuat grafik aktivitas satwa
+detection_30m$Species <- detection_30m$Scientific.Name
+
+# Membuat pola aktivitas banteng
+activityDensity(recordTable = detection_30m,
+                species     = 'Bos javanicus') # ganti nama spesies ini untuk satwa lainnya
+
+
+# Membuat pola aktivitas tumpang tindih antara 2 spesies
+## Mengatur lokasi output plot
+po <- "D:/latihan_tnkm"
+
+## Membuat plot nya
+activityOverlap (recordTable = detection_30m,
+                 speciesA = "Bos javanicus",
+                 speciesB = "Rusa unicolor",
+                 writePNG    = TRUE,
+                 plotDirectory = po,
+                 plotR = TRUE,
+                 pngMaxPix = 1000,
+                 linecol = c("black", "blue"),
+                 linewidth = c(5,3),
+                 linetype = c(1, 2),
+                 olapcol = "darkgrey",
+                 add.rug = TRUE,
+                 extend = "lightgrey",
+                 ylim = c(0, 0.25),
+                 main = paste("Tumpang tindih: ", "Bos javanicus", "-", "Rusa unicolor")
+)
+
+
+```
+
+### Plot Aktivitas
+
+```{r echo=FALSE}
+url1 <- "https://raw.githubusercontent.com/ryanavri/ct_desain_tnkm/main/det_lot.csv"
+detection_30m_n<- read.csv(url1)
+detection_30m_n$Species <- detection_30m_n$Scientific.Name
+
+
+# Membuat pola aktivitas banteng
+activityDensity(recordTable = detection_30m_n,
+                species     = 'Bos javanicus')
+```
+
+### Plot Tumpang Tindih
+
+```{r echo=FALSE}
+po <- "D:/latihan_tnkm"
+
+## Membuat plot nya
+activityOverlap (recordTable = detection_30m_n,
+                 speciesA = "Bos javanicus",
+                 speciesB = "Rusa unicolor",
+                 writePNG    = TRUE,
+                 plotDirectory = po,
+                 plotR = TRUE,
+                 pngMaxPix = 1000,
+                 linecol = c("black", "orange"),
+                 linewidth = c(5,3),
+                 linetype = c(1, 2),
+                 olapcol = "darksalmon",
+                 add.rug = TRUE,
+                 extend = "lightgrey",
+                 ylim = c(0, 0.25),
+                 main = paste("Tumpang tindih: ", "Bos javanicus", "-", "Rusa unicolor")
+)
+
+```
+:::
